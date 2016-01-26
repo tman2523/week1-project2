@@ -271,15 +271,17 @@ console.log("BONUS 2");
 
 var array1 = [2, 'dog', 34, 'Bill', 'plant', 'mug', 17];
 
-array1.splice(2, 1);
+var array2 = array1;
 
-array1.splice(4, 1);
+array2.splice(2, 1);
 
-array1.sort().unshift(array1.pop());
+array2.splice(4, 1);
 
-console.log(array1);
+array2.sort().unshift(array2.pop());
 
-//[ 17, 17, 2, 'Bill', 'dog', 'plant' ]
+console.log(array2);
+
+//[ 'plant', 17, 2, 'Bill', 'dog' ]
 
 //Goal
 var array2 = ['plant', 17, 2, 'Bill', 'dog'];
